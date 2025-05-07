@@ -1,0 +1,87 @@
+
+:root {
+  --purple: #6a1b9a;
+  --green: #66bb6a;
+  --grey: #f5f5f5;
+  --dark-grey: #444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--grey);
+  color: var(--dark-grey);
+}
+
+header {
+  background-color: var(--purple);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-preview {
+  background-color: white;
+  border-left: 4px solid var(--green);
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.post-preview:hover {
+  transform: translateY(-5px);
+}
+
+.post-preview h3 {
+  color: var(--purple);
+  margin-top: 0;
+}
+
+.post-preview a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-preview a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--purple);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
